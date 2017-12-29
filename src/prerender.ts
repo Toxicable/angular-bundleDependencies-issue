@@ -1,5 +1,5 @@
 // Load zone.js for the server.
-import 'zone.js/dist/zone-node';
+//import 'zone.js/dist/zone-node';
 import { renderModuleFactory } from '@angular/platform-server';
 import * as fs from 'fs';
 // Import the AOT compiled factory for your AppServerModule.

@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "ng serve --aot",
+    "build:alt": "ng build --prod && ng build --app 1 --aot --outputHashing=false --bundleDependencies all && node dist-server/main.bundle",
     "build:bundle": "ng build --prod && ng build --app 1 --bundleDependencies all --aot --outputHashing none && ts-node src/prerender",
     "build:nobundle": "ng build --prod && ng build --app 1 --bundleDependencies none --aot --outputHashing none && ts-node src/prerender"
   },
